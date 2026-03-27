@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="eye-icon">👁️</div>
+        <h1>Eye Care</h1>
+        <p class="subtitle">20 · 20 · 20 Rule</p>
+      </div>
+
+      <div class="card">
+        <label for="timer">Remind me every</label>
+        <div class="input-row">
+          <input
+            type="number"
+            name="timer"
+            id="timer"
+            min="1"
+            value="20"
+          />
+          <span class="unit">min</span>
+        </div>
+        <p class="tip">💡 Every 20 min, look 20 ft away for 20 sec</p>
+      </div>
+
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div id="countdown" class="countdown-display"></div>
+    </div>
+  </body>
+</html>

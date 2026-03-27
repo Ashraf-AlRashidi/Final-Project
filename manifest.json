@@ -1,0 +1,21 @@
+{
+  "name": "Eye Care",
+  "description": "Reminds you to follow the 20-20-20 rule to protect your eyes while working on the computer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "eye.png",
+    "32": "eye.png",
+    "48": "eye.png",
+    "128": "eye.png"
+  },
+  "permissions": ["alarms", "notifications", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "eye.png"
+  },
+  "author": "Your Name"
+}
